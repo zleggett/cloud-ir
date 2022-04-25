@@ -18,7 +18,7 @@ forensics_vms:
       availability_zone: us-east-1c
       # indicates that volume needs to be made
       exists: false
-      vol_id: vol-081a184f66958a138
+      vol_id: <volume_id>
       # size in GB
       vol_size: 6
     security_groups:
@@ -27,7 +27,7 @@ forensics_vms:
     # where target volumes should be mounted
     target_dev_id: /dev/sdg
     username: ubuntu
-  forensics-1:
+  forensics-2:
     aws_creds: <path-to-aws-credential-file.
     # indicates that VM already exists
     exists: true
@@ -41,7 +41,7 @@ forensics_vms:
       availability_zone: us-east-1c
       # indicates that volume already exists
       exists: true
-      vol_id: vol-081a184f66958a138
+      vol_id: <volume_id>
       # size in GB
       vol_size: 6
     security_groups:
