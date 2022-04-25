@@ -1,0 +1,80 @@
+# bucket to store reports
+evidence_bucket:
+  name: cloud-ir
+  region: us-east-1
+forensics_vms:
+  forensics-1:
+    aws_creds: <path-to-aws-credential-file.
+    # indicates that VM needs to be made
+    exists: false
+    # instance_id and ip will be populated on VM creation
+    instance_id: <id>
+    ip: <ip>
+    key_name: <aws_key_name>
+    key_path: <path_to_aws_key>
+    # where master volume should be mounted
+    master_dev_id: /dev/sdh
+    master_volume:
+      availability_zone: us-east-1c
+      # indicates that volume needs to be made
+      exists: false
+      vol_id: vol-081a184f66958a138
+      # size in GB
+      vol_size: 6
+    security_groups:
+    - <aws_security_group_id>
+    subnet_id: <aws_subnet_id>
+    # where target volumes should be mounted
+    target_dev_id: /dev/sdg
+    username: ubuntu
+  forensics-1:
+    aws_creds: <path-to-aws-credential-file.
+    # indicates that VM already exists
+    exists: true
+    instance_id: <id>
+    ip: <ip>
+    key_name: <aws_key_name>
+    key_path: <path_to_aws_key>
+    # where master volume should be mounted
+    master_dev_id: /dev/sdh
+    master_volume:
+      availability_zone: us-east-1c
+      # indicates that volume already exists
+      exists: true
+      vol_id: vol-081a184f66958a138
+      # size in GB
+      vol_size: 6
+    security_groups:
+    - <aws_security_group_id>
+    subnet_id: <aws_subnet_id>
+    # where target volumes should be mounted
+    target_dev_id: /dev/sdg
+    username: ubuntu
+target_vms:
+  aws_linux-1:
+    instance_id: <id>
+    ip: <ip>
+    key_path: <path_to_aws_key>
+    # memory profile information
+    profile_name: aws_linux2_4.14.268-205.500.amzn2.x86_64_profile.zip
+    profile_path: <path_to_memory_profile>
+    volatility_name: Linuxaws_linux2_4_14_268-205_500_amzn2_x86_64_profilex64
+    # where target volumes should be mounted
+    target_dev_id: /dev/sdg
+    username: ec2-user
+  aws_linux-2:
+    instance_id: <id>
+    ip: <ip>
+    key_path: <path_to_aws_key>
+    # memory profile information
+    profile_name: aws_linux2_4.14.268-205.500.amzn2.x86_64_profile.zip
+    profile_path: <path_to_memory_profile>
+    volatility_name: Linuxaws_linux2_4_14_268-205_500_amzn2_x86_64_profilex64
+    # where target volumes should be mounted
+    target_dev_id: /dev/sdg
+    username: ec2-user
+# Volume to store collected evidence per target VM
+target_volume:
+  availability_zone: us-east-1c
+  # size in GB
+  vol_size: 4

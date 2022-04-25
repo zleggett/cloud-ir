@@ -1,0 +1,470 @@
+Memory Information
+
+ ------------------------ linux_pstree ------------------------
+Name                 Pid             Uid            
+systemd              1                              
+.systemd-journal     1684                           
+.lvmetad             1818                           
+.systemd-udevd       2304                           
+.auditd              2465                           
+.lsmd                2490            999            
+.rpcbind             2504            32             
+.dbus-daemon         2506            81             
+.chronyd             2511            996            
+.systemd-logind      2515                           
+.rngd                2517            998            
+.gssproxy            2528                           
+.dhclient            2735                           
+.dhclient            2782                           
+.master              2926                           
+..qmgr               2928            89             
+..pickup             6024            89             
+.rsyslogd            2963                           
+.amazon-ssm-agen     2967                           
+.sshd                2970                           
+..sshd               8277                           
+...sshd              8295            1000           
+..sshd               8330                           
+...sshd              8348            1000           
+....sudo             8349                           
+.....avml            8358                           
+.crond               2987                           
+.atd                 2988                           
+.agetty              3047                           
+.agetty              3048                           
+.acpid               3123                           
+[kthreadd]           2                              
+.[kworker/0:0H]      4                              
+.[mm_percpu_wq]      6                              
+.[ksoftirqd/0]       7                              
+.[rcu_sched]         8                              
+.[rcu_bh]            9                              
+.[migration/0]       10                             
+.[watchdog/0]        11                             
+.[cpuhp/0]           12                             
+.[kdevtmpfs]         14                             
+.[netns]             15                             
+.[khungtaskd]        191                            
+.[oom_reaper]        192                            
+.[writeback]         193                            
+.[kcompactd0]        195                            
+.[ksmd]              196                            
+.[khugepaged]        197                            
+.[crypto]            198                            
+.[kintegrityd]       199                            
+.[kblockd]           201                            
+.[xen-balloon]       542                            
+.[md]                553                            
+.[edac-poller]       556                            
+.[watchdogd]         561                            
+.[kauditd]           702                            
+.[kswapd0]           708                            
+.[xfsalloc]          798                            
+.[xfs_mru_cache]     799                            
+.[kthrotld]          853                            
+.[xenbus]            864                            
+.[xenwatch]          865                            
+.[nvme-wq]           887                            
+.[ipv6_addrconf]     916                            
+.[kstrp]             921                            
+.[ata_sff]           1579                           
+.[scsi_eh_0]         1584                           
+.[scsi_tmf_0]        1593                           
+.[scsi_eh_1]         1596                           
+.[scsi_tmf_1]        1597                           
+.[xfs-buf/xvda1]     1616                           
+.[xfs-data/xvda1]    1617                           
+.[xfs-conv/xvda1]    1618                           
+.[xfs-cil/xvda1]     1619                           
+.[xfs-reclaim/xvd]   1620                           
+.[xfs-log/xvda1]     1621                           
+.[xfs-eofblocks/x]   1622                           
+.[xfsaild/xvda1]     1623                           
+.[kworker/0:1H]      1625                           
+.[ena]               2308                           
+.[rpciod]            2460                           
+.[xprtiod]           2461                           
+.[kworker/u31:0]     3565                           
+.[kworker/u30:3]     3574                           
+.[kworker/u30:0]     5090                           
+.[kworker/0:1]       7814                           
+.[kworker/0:2]       8172                           
+.[kworker/0:0]       8234                           
+.[kworker/0:3]       8243                           
+.[jbd2/xvdg1-8]      8328                           
+.[ext4-rsv-conver]   8329                           
+.[kworker/u30:1]     8359                           
+ssm-agent-worke      3111                           
+
+ ------------------------ linux_bash ------------------------
+Pid      Name                 Command Time                   Command
+-------- -------------------- ------------------------------ -------
+
+ ------------------------ linux_psaux ------------------------
+Pid    Uid    Gid    Arguments                                                       
+1      0      0      /usr/lib/systemd/systemd --switched-root --system --deserialize 21
+2      0      0      [kthreadd]                                                      
+4      0      0      [kworker/0:0H]                                                  
+6      0      0      [mm_percpu_wq]                                                  
+7      0      0      [ksoftirqd/0]                                                   
+8      0      0      [rcu_sched]                                                     
+9      0      0      [rcu_bh]                                                        
+10     0      0      [migration/0]                                                   
+11     0      0      [watchdog/0]                                                    
+12     0      0      [cpuhp/0]                                                       
+14     0      0      [kdevtmpfs]                                                     
+15     0      0      [netns]                                                         
+191    0      0      [khungtaskd]                                                    
+192    0      0      [oom_reaper]                                                    
+193    0      0      [writeback]                                                     
+195    0      0      [kcompactd0]                                                    
+196    0      0      [ksmd]                                                          
+197    0      0      [khugepaged]                                                    
+198    0      0      [crypto]                                                        
+199    0      0      [kintegrityd]                                                   
+201    0      0      [kblockd]                                                       
+542    0      0      [xen-balloon]                                                   
+553    0      0      [md]                                                            
+556    0      0      [edac-poller]                                                   
+561    0      0      [watchdogd]                                                     
+702    0      0      [kauditd]                                                       
+708    0      0      [kswapd0]                                                       
+798    0      0      [xfsalloc]                                                      
+799    0      0      [xfs_mru_cache]                                                 
+853    0      0      [kthrotld]                                                      
+864    0      0      [xenbus]                                                        
+865    0      0      [xenwatch]                                                      
+887    0      0      [nvme-wq]                                                       
+916    0      0      [ipv6_addrconf]                                                 
+921    0      0      [kstrp]                                                         
+1579   0      0      [ata_sff]                                                       
+1584   0      0      [scsi_eh_0]                                                     
+1593   0      0      [scsi_tmf_0]                                                    
+1596   0      0      [scsi_eh_1]                                                     
+1597   0      0      [scsi_tmf_1]                                                    
+1616   0      0      [xfs-buf/xvda1]                                                 
+1617   0      0      [xfs-data/xvda1]                                                
+1618   0      0      [xfs-conv/xvda1]                                                
+1619   0      0      [xfs-cil/xvda1]                                                 
+1620   0      0      [xfs-reclaim/xvd]                                               
+1621   0      0      [xfs-log/xvda1]                                                 
+1622   0      0      [xfs-eofblocks/x]                                               
+1623   0      0      [xfsaild/xvda1]                                                 
+1625   0      0      [kworker/0:1H]                                                  
+1684   0      0      /usr/lib/systemd/systemd-journald                               
+1818   0      0      /usr/sbin/lvmetad -f                                            
+2304   0      0      /usr/lib/systemd/systemd-udevd                                  
+2308   0      0      [ena]                                                           
+2460   0      0      [rpciod]                                                        
+2461   0      0      [xprtiod]                                                       
+2465   0      0      /sbin/auditd                                                    
+2490   999    998    /usr/bin/lsmd -d                                                
+2504   32     32     /sbin/rpcbind -w                                                
+2506   81     81     /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation
+2511   996    994    /usr/sbin/chronyd                                               
+2515   0      0      /usr/lib/systemd/systemd-logind                                 
+2517   998    996    /sbin/rngd -f --fill-watermark=0 --exclude=jitter               
+2528   0      0      /usr/sbin/gssproxy -D                                           
+2735   0      0      /sbin/dhclient -q -lf /var/lib/dhclient/dhclient--eth0.lease -pf /var/run/dhclient-eth0.pid -H ip-172-31-19-44 eth0
+2782   0      0      /sbin/dhclient -6 -nw -lf /var/lib/dhclient/dhclient6--eth0.lease -pf /var/run/dhclient6-eth0.pid eth0 -H ip-172-31-19-44
+2926   0      0      /usr/libexec/postfix/master -w                                  
+2928   89     89     qmgr -l -t unix -u                                              
+2963   0      0      /usr/sbin/rsyslogd -n                                           
+2967   0      0      /usr/bin/amazon-ssm-agent                                       
+2970   0      0      /usr/sbin/sshd -D                                               
+2987   0      0      /usr/sbin/crond -n                                              
+2988   0      0      /usr/sbin/atd -f                                                
+3047   0      0      /sbin/agetty --noclear tty1 linux                               
+3048   0      0      /sbin/agetty --keep-baud 115200,38400,9600 ttyS0 vt220          
+3111   0      0      /usr/bin/ssm-agent-worker                                       
+3123   0      0      /usr/sbin/acpid                                                 
+3565   0      0      [kworker/u31:0]                                                 
+3574   0      0      [kworker/u30:3]                                                 
+5090   0      0      [kworker/u30:0]                                                 
+6024   89     89     pickup -l -t unix -u                                            
+7814   0      0      [kworker/0:1]                                                   
+8172   0      0      [kworker/0:2]                                                   
+8234   0      0      [kworker/0:0]                                                   
+8243   0      0      [kworker/0:3]                                                   
+8277   0      0      sshd: ec2-user [priv]                                           
+8295   1000   1000   sshd: ec2-user@notty                                            
+8328   0      0      [jbd2/xvdg1-8]                                                  
+8329   0      0      [ext4-rsv-conver]                                               
+8330   0      0      sshd: ec2-user [priv]                                           
+8348   1000   1000   sshd: ec2-user@notty                                            
+8349   0      0      sudo /mnt/evidence/avml /mnt/evidence/aws_linux-2_20220424-180214.lime
+8358   0      0      /mnt/evidence/avml /mnt/evidence/aws_linux-2_20220424-180214.lime
+8359   0      0      [kworker/u30:1]                                                 
+
+ ------------------------ linux_netstat ------------------------
+UNIX 12054              systemd/1     /run/systemd/private
+UNIX 12091              systemd/1     /run/systemd/shutdownd
+UNIX 12196              systemd/1     /run/udev/control
+UNIX 10478              systemd/1     /run/systemd/notify
+UNIX 10480              systemd/1     /run/systemd/cgroups-agent
+UNIX 10488              systemd/1     /run/systemd/journal/stdout
+UNIX 10491              systemd/1     /run/systemd/journal/socket
+UNIX 12286              systemd/1     /run/lvm/lvmpolld.socket
+UNIX 10493              systemd/1     /dev/log
+UNIX 12352              systemd/1     /run/lvm/lvmetad.socket
+UNIX 12444              systemd/1     
+UNIX 12752              systemd/1     /run/systemd/journal/stdout
+UNIX 13489              systemd/1     /run/systemd/journal/stdout
+UNIX 14429              systemd/1     /var/run/rpcbind.sock
+UNIX 14432              systemd/1     /run/dbus/system_bus_socket
+UNIX 14976              systemd/1     
+UNIX 15266              systemd/1     /run/systemd/journal/stdout
+UNIX 17264              systemd/1     /run/systemd/journal/stdout
+UNIX 14629              systemd/1     /run/systemd/journal/stdout
+UNIX 14685              systemd/1     /run/systemd/journal/stdout
+UNIX 17872              systemd/1     /run/systemd/journal/stdout
+UNIX 14794              systemd/1     /run/systemd/journal/stdout
+UNIX 17562              systemd/1     /run/systemd/journal/stdout
+UNIX 15032              systemd/1     /run/systemd/journal/stdout
+UNIX 15168              systemd/1     /run/systemd/journal/stdout
+UNIX 10488      systemd-journal/1684  /run/systemd/journal/stdout
+UNIX 10491      systemd-journal/1684  /run/systemd/journal/socket
+UNIX 10493      systemd-journal/1684  /dev/log
+UNIX 12185      systemd-journal/1684  
+UNIX 13489      systemd-journal/1684  /run/systemd/journal/stdout
+UNIX 15168      systemd-journal/1684  /run/systemd/journal/stdout
+UNIX 15266      systemd-journal/1684  /run/systemd/journal/stdout
+UNIX 12752      systemd-journal/1684  /run/systemd/journal/stdout
+UNIX 14629      systemd-journal/1684  /run/systemd/journal/stdout
+UNIX 15032      systemd-journal/1684  /run/systemd/journal/stdout
+UNIX 17562      systemd-journal/1684  /run/systemd/journal/stdout
+UNIX 14685      systemd-journal/1684  /run/systemd/journal/stdout
+UNIX 14794      systemd-journal/1684  /run/systemd/journal/stdout
+UNIX 17264      systemd-journal/1684  /run/systemd/journal/stdout
+UNIX 17872      systemd-journal/1684  /run/systemd/journal/stdout
+UNIX 12751              lvmetad/1818  
+UNIX 12751              lvmetad/1818  
+UNIX 12352              lvmetad/1818  /run/lvm/lvmetad.socket
+UNIX 12956        systemd-udevd/2304  
+UNIX 12956        systemd-udevd/2304  
+UNIX 12196        systemd-udevd/2304  /run/udev/control
+UNIX 13051        systemd-udevd/2304  
+UNIX 13149        systemd-udevd/2304  
+UNIX 13150        systemd-udevd/2304  
+UNIX 14275               auditd/2465  
+UNIX 14284               auditd/2465  
+UNIX 14285               auditd/2465  
+UNIX 14628                 lsmd/2490  
+UNIX 14684                 lsmd/2490  
+UNIX 15185                 lsmd/2490  /var/run/lsm/ipc/sim
+UNIX 15195                 lsmd/2490  /var/run/lsm/ipc/simc
+UNIX 14429              rpcbind/2504  /var/run/rpcbind.sock
+UDP      ::              :    0 ::              :    0                           rpcbind/2504 
+UDP      0.0.0.0         :  111 0.0.0.0         :    0                           rpcbind/2504 
+UDP      0.0.0.0         :  968 0.0.0.0         :    0                           rpcbind/2504 
+TCP      0.0.0.0         :  111 0.0.0.0         :    0 LISTEN                    rpcbind/2504 
+UDP      ::              :  111 ::              :    0                           rpcbind/2504 
+UDP      ::              :  968 ::              :    0                           rpcbind/2504 
+TCP      ::              :  111 ::              :    0 LISTEN                    rpcbind/2504 
+UNIX 15031          dbus-daemon/2506  
+UNIX 15031          dbus-daemon/2506  
+UNIX 14432          dbus-daemon/2506  /run/dbus/system_bus_socket
+UNIX 15095          dbus-daemon/2506  
+UNIX 15096          dbus-daemon/2506  
+UNIX 15097          dbus-daemon/2506  /run/dbus/system_bus_socket
+UNIX 15274          dbus-daemon/2506  /run/dbus/system_bus_socket
+UNIX 15044              chronyd/2511  
+UDP      127.0.0.1       :  323 0.0.0.0         :    0                           chronyd/2511 
+UDP      ::1             :  323 ::              :    0                           chronyd/2511 
+UNIX 15075              chronyd/2511  /run/chrony/chronyd.sock
+UNIX 15167       systemd-logind/2515  
+UNIX 15167       systemd-logind/2515  
+UNIX 15258       systemd-logind/2515  
+UNIX 15273       systemd-logind/2515  
+UNIX 15265                 rngd/2517  
+UNIX 15265                 rngd/2517  
+UNIX 14793             gssproxy/2528  
+UNIX 14793             gssproxy/2528  
+UNIX 15334             gssproxy/2528  
+UNIX 15339             gssproxy/2528  
+UNIX 15340             gssproxy/2528  
+UNIX 15341             gssproxy/2528  /var/lib/gssproxy/default.sock
+UNIX 15342             gssproxy/2528  /run/gssproxy.sock
+UNIX 15725             dhclient/2735  
+UDP      0.0.0.0         :   68 0.0.0.0         :    0                          dhclient/2735 
+UNIX 15947             dhclient/2782  
+UDP      fe80::89b:10ff:feac:12d7:  546 ::              :    0                          dhclient/2782 
+UNIX 16795               master/2926  
+TCP      127.0.0.1       :   25 0.0.0.0         :    0 LISTEN                     master/2926 
+UNIX 16834               master/2926  
+UNIX 16835               master/2926  
+UNIX 16836               master/2926  public/pickup
+UNIX 16837               master/2926  
+UNIX 16838               master/2926  
+UNIX 16840               master/2926  public/cleanup
+UNIX 16841               master/2926  
+UNIX 16842               master/2926  
+UNIX 16843               master/2926  public/qmgr
+UNIX 16844               master/2926  
+UNIX 16845               master/2926  
+UNIX 16847               master/2926  private/tlsmgr
+UNIX 16848               master/2926  
+UNIX 16849               master/2926  
+UNIX 16850               master/2926  private/rewrite
+UNIX 16851               master/2926  
+UNIX 16852               master/2926  
+UNIX 16853               master/2926  private/bounce
+UNIX 16854               master/2926  
+UNIX 16855               master/2926  
+UNIX 16856               master/2926  private/defer
+UNIX 16857               master/2926  
+UNIX 16858               master/2926  
+UNIX 16859               master/2926  private/trace
+UNIX 16860               master/2926  
+UNIX 16861               master/2926  
+UNIX 16862               master/2926  private/verify
+UNIX 16863               master/2926  
+UNIX 16864               master/2926  
+UNIX 16865               master/2926  public/flush
+UNIX 16866               master/2926  
+UNIX 16867               master/2926  
+UNIX 16868               master/2926  private/proxymap
+UNIX 16869               master/2926  
+UNIX 16870               master/2926  
+UNIX 16871               master/2926  private/proxywrite
+UNIX 16872               master/2926  
+UNIX 16873               master/2926  
+UNIX 16874               master/2926  private/smtp
+UNIX 16875               master/2926  
+UNIX 16876               master/2926  
+UNIX 16877               master/2926  private/relay
+UNIX 16878               master/2926  
+UNIX 16879               master/2926  
+UNIX 16880               master/2926  public/showq
+UNIX 16881               master/2926  
+UNIX 16882               master/2926  
+UNIX 16883               master/2926  private/error
+UNIX 16884               master/2926  
+UNIX 16885               master/2926  
+UNIX 16886               master/2926  private/retry
+UNIX 16887               master/2926  
+UNIX 16888               master/2926  
+UNIX 16889               master/2926  private/discard
+UNIX 16890               master/2926  
+UNIX 16891               master/2926  
+UNIX 16892               master/2926  private/local
+UNIX 16893               master/2926  
+UNIX 16894               master/2926  
+UNIX 16895               master/2926  private/virtual
+UNIX 16896               master/2926  
+UNIX 16897               master/2926  
+UNIX 16898               master/2926  private/lmtp
+UNIX 16899               master/2926  
+UNIX 16900               master/2926  
+UNIX 16901               master/2926  private/anvil
+UNIX 16902               master/2926  
+UNIX 16903               master/2926  
+UNIX 16904               master/2926  private/scache
+UNIX 16905               master/2926  
+UNIX 16906               master/2926  
+UNIX 16845                 qmgr/2928  
+UNIX 16843                 qmgr/2928  public/qmgr
+UNIX 16927                 qmgr/2928  
+UNIX 17701             rsyslogd/2963  
+UNIX 17263      amazon-ssm-agen/2967  
+UNIX 17263      amazon-ssm-agen/2967  
+UNIX 18104      amazon-ssm-agen/2967  /var/lib/amazon/ssm/ipc/health
+UNIX 18105      amazon-ssm-agen/2967  /var/lib/amazon/ssm/ipc/termination
+UNIX 18811      amazon-ssm-agen/2967  /var/lib/amazon/ssm/ipc/health
+UNIX 18813      amazon-ssm-agen/2967  /var/lib/amazon/ssm/ipc/termination
+UNIX 17561                 sshd/2970  
+UNIX 17561                 sshd/2970  
+TCP      0.0.0.0         :   22 0.0.0.0         :    0 LISTEN                       sshd/2970 
+TCP      ::              :   22 ::              :    0 LISTEN                       sshd/2970 
+UNIX 17871                crond/2987  
+UNIX 17871                crond/2987  
+UNIX 17951                crond/2987  
+UNIX 18808      ssm-agent-worke/3111  
+UNIX 18809      ssm-agent-worke/3111  
+UNIX 18740                acpid/3123  
+UNIX 18743                acpid/3123  /var/run/acpid.socket
+UNIX 16838               pickup/6024  
+UNIX 16836               pickup/6024  public/pickup
+UNIX 43824               pickup/6024  
+TCP      172.31.19.44    :   22 24.179.47.86    :51458 ESTABLISHED                  sshd/8277 
+UNIX 61307                 sshd/8277  
+UNIX 61314                 sshd/8277  
+TCP      172.31.19.44    :   22 24.179.47.86    :51458 ESTABLISHED                  sshd/8295 
+UNIX 61307                 sshd/8295  
+UNIX 61313                 sshd/8295  
+TCP      172.31.19.44    :   22 24.179.47.86    :51460 ESTABLISHED                  sshd/8330 
+UNIX 61638                 sshd/8330  
+UNIX 61645                 sshd/8330  
+TCP      172.31.19.44    :   22 24.179.47.86    :51460 ESTABLISHED                  sshd/8348 
+UNIX 61638                 sshd/8348  
+UNIX 61644                 sshd/8348  
+UNIX 61715                 sudo/8349  
+
+ ------------------------ linux_mount ------------------------
+tmpfs                     /sys/fs/cgroup                      tmpfs        ro,nosuid,nodev,noexec                                            
+@}#=????`}#=???????????????????s#=???? v#=????P????????????? /                                    r#=????`{#=?????(??????)??????{#=???? rw                                                                
+mqueue                    /dev/mqueue                         mqueue       rw,relatime                                                       
+debugfs                   /sys/kernel/debug                   debugfs      rw,relatime                                                       
+cgroup                    /sys/fs/cgroup/cpu,cpuacct          cgroup       rw,relatime,nosuid,nodev,noexec                                   
+devtmpfs                  /dev                                devtmpfs     rw,nosuid                                                         
+cgroup                    /sys/fs/cgroup/net_cls,net_prio     cgroup       rw,relatime,nosuid,nodev,noexec                                   
+/dev/xvda1                /                                   xfs          rw,noatime                                                        
+cgroup                    /sys/fs/cgroup/systemd              cgroup       rw,relatime,nosuid,nodev,noexec                                   
+sysfs                     /sys                                sysfs        rw,relatime,nosuid,nodev,noexec                                   
+cgroup                    /sys/fs/cgroup/perf_event           cgroup       rw,relatime,nosuid,nodev,noexec                                   
+cgroup                    /sys/fs/cgroup/pids                 cgroup       rw,relatime,nosuid,nodev,noexec                                   
+tmpfs                     /dev/shm                            tmpfs        rw,nosuid,nodev                                                   
+systemd-1                 /proc/sys/fs/binfmt_misc            autofs       rw,relatime                                                       
+hugetlbfs                 /dev/hugepages                      hugetlbfs    rw,relatime                                                       
+`w#=?????~#=??????????????????`s#=?????r#=?????????? ?????? s#=?????#=???? +?????`+????? /                                    {#=?????y#=?????????? ???????p#=????@}#=?????????????????? ro                                                                
+tmpfs                     /run                                tmpfs        rw,nosuid,nodev                                                   
+/dev/xvdg1                /mnt/evidence                       ext4         rw,relatime                                                       
+tmpfs                     /run/user/1000                      tmpfs        rw,relatime,nosuid,nodev                                          
+ |#=?????#=??????????? ?????? /                                   `z#=???? ~#=???? ?????P?????@|#=?????x#=???????????????????x#=?????{#=???????????/??????@~#=????`p#=????????????????`v#=?????p#=???? ??????p?????? ro,nodiratime                                                     
+cgroup                    /sys/fs/cgroup/cpuset               cgroup       rw,relatime,nosuid,nodev,noexec                                   
+cgroup                    /sys/fs/cgroup/blkio                cgroup       rw,relatime,nosuid,nodev,noexec                                   
+ y#=????`#=??????????  /                                    }#=???? r#=????P??????????? rw,relatime                                                       
+securityfs                /sys/kernel/security                securityfs   rw,relatime,nosuid,nodev,noexec                                   
+proc                      /proc                               proc         rw,relatime,nosuid,nodev,noexec                                   
+sunrpc                    /var/lib/nfs/rpc_pipefs             rpc_pipefs   rw,relatime                                                       
+cgroup                    /sys/fs/cgroup/memory               cgroup       rw,relatime,nosuid,nodev,noexec                                   
+`/Q=????`/Q=?????b=?????b=?????mh=?????mh=???? /0UU=????0/Q=????@??????HUU=????H/Q=????@??????`	U=????`	U=?????b=?????b=????8lh=????//Q=???? 0U6=????0	U=????@??????HU6=????H	U=????@??????`UU=????`UU=?????b=?????b=?????gh=?????gh=???? rw,noatime                                                        
+cgroup                    /sys/fs/cgroup/devices              cgroup       rw,relatime,nosuid,nodev,noexec                                   
+cgroup                    /sys/fs/cgroup/hugetlb              cgroup       rw,relatime,nosuid,nodev,noexec                                   
+devpts                    /dev/pts                            devpts       rw,relatime,nosuid,noexec                                         
+cgroup                    /sys/fs/cgroup/freezer              cgroup       rw,relatime,nosuid,nodev,noexec                                   
+@z#=?????w#=????@G?????`G??????r#=?????v#=????P????????????? /                                   `y#=?????s#=??????????? ?????? ro                                                                
+pstore                    /sys/fs/pstore                      pstore       rw,relatime,nosuid,nodev,noexec                                   
+
+ ------------------------ linux_lsmod ------------------------
+ffffffffa02ddf00 ext4 733184
+ffffffffa015b000 crc16 16384
+ffffffffa014a080 mbcache 16384
+ffffffffa0233900 jbd2 126976
+ffffffffa01993c0 fscrypto 32768
+ffffffffa01fcf80 sunrpc 393216
+ffffffffa01b2280 dm_mirror 28672
+ffffffffa01aa040 dm_region_hash 20480
+ffffffffa01a4180 dm_log 20480
+ffffffffa018bb00 dm_mod 143360
+ffffffffa016c780 dax 69632
+ffffffffa0156080 sb_edac 24576
+ffffffffa0145200 crc32_pclmul 16384
+ffffffffa014f400 ghash_clmulni_intel 16384
+ffffffffa01110c0 pcbc 16384
+ffffffffa013a340 aesni_intel 188416
+ffffffffa01001c0 aes_x86_64 20480
+ffffffffa007c000 crypto_simd 16384
+ffffffffa005f000 glue_helper 16384
+ffffffffa010b100 cryptd 28672
+ffffffffa00fa100 mousedev 24576
+ffffffffa00ef080 evdev 20480
+ffffffffa00e42c0 psmouse 32768
+ffffffffa00131c0 button 16384
+ffffffffa00d9b40 ena 118784
+ffffffffa005a200 ata_piix 36864
+ffffffffa00b2900 libata 266240
+ffffffffa0077680 xen_blkfront 49152
+ffffffffa0069200 crc32c_intel 24576
+ffffffffa0047580 scsi_mod 245760
+ffffffffa000bb40 autofs4 49152
