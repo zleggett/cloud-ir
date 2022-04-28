@@ -1,0 +1,88 @@
+***Creating forensics VM***
+
+Creating vm with name forensics-1
+forensics-1 created successfully
+forensics-1 is now running
+public ip of forensics-1 is: 54.160.232.5
+Checking SSH connection with 10 retries:
+SSH successful
+Installing packages for forensics-1
+Finished setting up forensics-1
+***Forensics VM created sucessfully***
+
+***Creating master volume***
+***Creating volume***
+***Success!! volume: vol-0f89c6b267097c14f created...
+
+Attaching volume vol-0f89c6b267097c14f to instance i-09b6020c85b45db40
+***Success!! volume vol-0f89c6b267097c14f  is attached to instance i-09b6020c85b45db40
+
+***Configuring master volume vol-0f89c6b267097c14f
+Finsished configuring vol-0f89c6b267097c14f
+
+Creating volumes for aws_linux-1
+***Creating volume***
+***Success!! volume: vol-001308dff5e03bed5 created...
+
+Attaching volume vol-001308dff5e03bed5 to instance i-09b6020c85b45db40
+***Success!! volume vol-001308dff5e03bed5  is attached to instance i-09b6020c85b45db40
+
+Configuring forensics volume vol-001308dff5e03bed5
+***Sucess!! Finsished configuring vol-001308dff5e03bed5
+
+Detaching volume vol-001308dff5e03bed5 from instance i-09b6020c85b45db40
+***Success!! volume vol-001308dff5e03bed5 is detached from instance i-09b6020c85b45db40
+
+***Taking volume snapshots***
+***Success! Volume snapshots created for instance: i-03202815ce0fc14ef
+
+Collecting data from aws_linux-1
+Attaching volume vol-001308dff5e03bed5 to instance i-03202815ce0fc14ef
+***Success!! volume vol-001308dff5e03bed5  is attached to instance i-03202815ce0fc14ef
+
+Mounting volume /dev/sdg to /mnt/evidence
+***Success!! Device /dev/sdg mounted to host 3.91.156.102
+
+Collecting memory image for 3.91.156.102
+***Memory image created successfully...
+
+Analyzing volume snapshot from 3.91.156.102
+***Success!! Volume snapshot analysis completed successfully...
+Report can be found at /mnt/evidence/aws_linux-1_20220424-140930_vol.txt
+
+Unmounting volume /dev/sdg from 3.91.156.102
+***Success!! Device /dev/sdg is unmounted from host 3.91.156.102
+
+Detaching volume vol-001308dff5e03bed5 from instance i-03202815ce0fc14ef
+***Success!! volume vol-001308dff5e03bed5 is detached from instance i-03202815ce0fc14ef
+
+Connected to remote machine
+***Files successfully copied to remote machine 54.160.232.5
+
+Attaching volume vol-001308dff5e03bed5 to instance i-09b6020c85b45db40
+***Success!! volume vol-001308dff5e03bed5  is attached to instance i-09b6020c85b45db40
+
+Mounting volume /dev/sdg to /mnt/evidence
+***Success!! Device /dev/sdg mounted to host 54.160.232.5
+
+Copying incident files to master volume
+***Files successfully copied to master volume...
+
+Unmounting volume /dev/sdg from 54.160.232.5
+***Success!! Device /dev/sdg is unmounted from host 54.160.232.5
+
+Detaching volume vol-001308dff5e03bed5 from instance i-09b6020c85b45db40
+***Success!! volume vol-001308dff5e03bed5 is detached from instance i-09b6020c85b45db40
+
+Starting memory image analysis
+***Success!! Memory analysis completed successfully...
+Report can be found at /mnt/master/aws_linux-1_20220424-140930_mem.txt
+
+Creating bucket cloud-ir-test in region us-east-1
+***Success!! Bucket cloud-ir-test created successfully
+
+Uploading reports to bucket cloud-ir-test
+***Reports uploaded successfully to bucket cloud-ir-test
+
+Deleting volume vol-001308dff5e03bed5
+***Volume deleted...
